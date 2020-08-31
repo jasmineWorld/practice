@@ -42,3 +42,41 @@ cubes = [value**3 for value in range(1,11)]
 
 for xy in cubes:
     print(xy)
+  
+#4-10 Slice : using one of the programs you wrote in this chapter, add several lines to the end of
+#the progrma that do the fllowings:
+
+
+food_list = ["coffee", "soda", "burgers","coke", "noodles"]
+print("The first three items in the list are: ", food_list[0:3])
+print("Three items from middle of the list are: ", food_list[1:4])
+print("The last three items in the list are: ", food_list[-3:])
+
+#4-11 My pizzas, your pizzas
+pizzas = ["cheese pizza", "bulgogi pizza", "combination pizza"]
+friend_pizzas = pizzas[:] #copy pizzas list
+pizzas.append("original pizza")
+friend_pizzas.append("hawaiian pizza")
+
+print("My favorite pizzas are :")
+for pizza in pizzas:
+    print(pizza)
+
+print ("\n")
+print("My friend's fav pizzas are")
+for pizza in friend_pizzas:
+    print(pizza)
+
+#skip 4-12
+#4-13
+print("The original menu")
+buffet_food = ("김밥","잡채","떡볶이","튀김","과일")
+for food in buffet_food:
+    print(food)
+
+#buffet_food[0] = "짜장면" this is not working. tuple is not allowed to be changed.
+#buffet_food.pop() =>AttributeError: 'tuple' object has no attribute 'pop'
+print ("\nafter changing the menu")
+buffet_food=("pizza","burgers","떡볶이","튀김","과일")
+for food in buffet_food:
+    print(food)
